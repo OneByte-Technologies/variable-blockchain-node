@@ -359,7 +359,7 @@ services:
     depends_on:
       cdk-validium-data-node-db:
         condition: service_healthy
-    image: hermeznetwork/cdk-data-availability:v0.0.1
+    image: hermeznetwork/cdk-data-availability:v0.0.2
     deploy:
       resources:
         limits:
@@ -469,16 +469,16 @@ services:
     depends_on:
       - zkevm-bridge-service
     environment:
-      - ETHEREUM_RPC_URL=http://${COMMON_HOST}:8545
-      - ETHEREUM_EXPLORER_URL=http://${COMMON_HOST}:4000
+      - ETHEREUM_RPC_URL=https://sepolia.infura.io/v3/2dda643294d74a10bc9bf2fdcf85e8f5
+      - ETHEREUM_EXPLORER_URL=https://sepolia.etherscan.io/
       - ETHEREUM_BRIDGE_CONTRACT_ADDRESS=0x34C13B52bDf8C7763F5De93E9F4EC08883e90caE
       - ETHEREUM_FORCE_UPDATE_GLOBAL_EXIT_ROOT=true
       - ETHEREUM_PROOF_OF_EFFICIENCY_CONTRACT_ADDRESS=0x3FADf9d607C378086f370D0bE0e2D06Ab7DA62f9
-      - POLYGON_ZK_EVM_RPC_URL=http://${COMMON_HOST}:8123
-      - POLYGON_ZK_EVM_EXPLORER_URL=http://${COMMON_HOST}:4001
+      - POLYGON_ZK_EVM_RPC_URL=http://cdk-validium-json-rpc:8123
+      - POLYGON_ZK_EVM_EXPLORER_URL=http://localhost:4001
       - POLYGON_ZK_EVM_BRIDGE_CONTRACT_ADDRESS=0x34C13B52bDf8C7763F5De93E9F4EC08883e90caE
       - POLYGON_ZK_EVM_NETWORK_ID=1
-      - BRIDGE_API_URL=http://${COMMON_HOST}:8080
+      - BRIDGE_API_URL=http://localhost:8080
       - ENABLE_FIAT_EXCHANGE_RATES=false
       - ENABLE_OUTDATED_NETWORK_MODAL=false
       - ENABLE_DEPOSIT_WARNING=true
@@ -578,7 +578,7 @@ services:
   cdk-validium-data-node-db:
     container_name: cdk-validium-data-node-db
     restart: unless-stopped
-    image: postgres
+    image: postgres:15
     healthcheck:
       test: ["CMD-SHELL", "pg_isready -d $${POSTGRES_DB} -U $${POSTGRES_USER}"]
       interval: 10s

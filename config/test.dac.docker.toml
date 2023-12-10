@@ -1,12 +1,14 @@
-PrivateKey = {Path = "/pk/test-member.keystore", Password = ""}
+PrivateKey = {Path = "/pk/test-member.keystore", Password = "testonly"}
 
 [L1]
-WsURL = "wss://sepolia.infura.io/v3/2dda643294d74a10bc9bf2fdcf85e8f5"
+WsURL = "wss://quiet-solemn-field.ethereum-sepolia.quiknode.pro/6a59fdcbd391d36e6cb812854d2e02fbc959b99e/"
 RpcURL = "https://sepolia.infura.io/v3/2dda643294d74a10bc9bf2fdcf85e8f5"
 CDKValidiumAddress = "0x3FADf9d607C378086f370D0bE0e2D06Ab7DA62f9"
 DataCommitteeAddress = "0x9d64c427954bA0c4d93597d9069F366473EfDeB3"
 Timeout = "3m"
 RetryPeriod = "5s"
+BlockBatchSize = 32
+
 
 [Log]
 Environment = "development" # "production" or "development"
