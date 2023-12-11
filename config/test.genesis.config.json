@@ -95,7 +95,7 @@
     },
     {
       "accountName": "deployer",
-      "balance": "0",
+      "balance": "11000000000000000000",
       "nonce": "8",
       "address": "0x27E0E912327533C8cc9D10F2c6699433E0E88183"
     }

@@ -60,7 +60,7 @@ GeneratingProofCleanupThreshold = "10m"
 
 
 
-docker-compose -f docker-compose.yml up -d cdk-validium-approve
+docker-compose -f docker-compose.yml up -d dac-setup-committee-sepolia
 
 
 
@@ -102,3 +102,26 @@ $(MAKE) run-node
     $(MAKE) run-dac
     $(MAKE) run-bridge
     $(MAKE) run-l2-explorer
+
+
+        docker-compose -f docker-compose.yml up -d dac-setup-committee-sepolia
+		docker-compose -f docker-compose.yml up -d cdk-validium-state-db
+		docker-compose -f docker-compose.yml up -d cdk-validium-pool-db
+		docker-compose -f docker-compose.yml up -d cdk-validium-event-db
+		docker-compose -f docker-compose.yml up -d cdk-validium-prover
+		docker-compose -f docker-compose.yml up -d cdk-validium-approve
+		docker-compose -f docker-compose.yml up -d cdk-validium-sync
+		docker-compose -f docker-compose.yml up -d cdk-validium-eth-tx-manager
+		docker-compose -f docker-compose.yml up -d cdk-validium-sequencer
+		docker-compose -f docker-compose.yml up -d cdk-validium-sequence-sender
+		docker-compose -f docker-compose.yml up -d cdk-validium-l2gaspricer
+		docker-compose -f docker-compose.yml up -d cdk-validium-aggregator
+		docker-compose -f docker-compose.yml up -d cdk-validium-json-rpc
+		docker-compose -f docker-compose.yml up -d  cdk-validium-data-node-db
+		docker-compose -f docker-compose.yml up -d cdk-validium-data-availability
+		docker-compose -f docker-compose.yml up -d zkevm-bridge-db
+		docker-compose -f docker-compose.yml up -d zkevm-bridge-service
+		docker-compose -f docker-compose.yml up -d zkevm-bridge-ui
+		docker-compose -f docker-compose.yml up -d cdk-validium-explorer-l2-db
+		docker-compose -f docker-compose.yml up -d cdk-validium-explorer-json-rpc
+		docker-compose -f docker-compose.yml up -d cdk-validium-explorer-l2

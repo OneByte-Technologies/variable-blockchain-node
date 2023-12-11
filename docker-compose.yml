@@ -150,7 +150,7 @@ services:
     environment:
       - CDK_VALIDIUM_NODE_POOL_DB_HOST=cdk-validium-pool-db
     volumes:
-      - ./test.keystore:/pk/keystore
+      - ./config/test.keystore.claimtx:/pk/keystore
       - ./config/test.node.config.toml:/app/config.toml
       - ./config/test.genesis.config.json:/app/genesis.json
     command:
@@ -474,7 +474,7 @@ services:
       - ETHEREUM_BRIDGE_CONTRACT_ADDRESS=0x34C13B52bDf8C7763F5De93E9F4EC08883e90caE
       - ETHEREUM_FORCE_UPDATE_GLOBAL_EXIT_ROOT=true
       - ETHEREUM_PROOF_OF_EFFICIENCY_CONTRACT_ADDRESS=0x3FADf9d607C378086f370D0bE0e2D06Ab7DA62f9
-      - POLYGON_ZK_EVM_RPC_URL=http://cdk-validium-json-rpc:8123
+      - POLYGON_ZK_EVM_RPC_URL=http://localhost:8123
       - POLYGON_ZK_EVM_EXPLORER_URL=http://localhost:4001
       - POLYGON_ZK_EVM_BRIDGE_CONTRACT_ADDRESS=0x34C13B52bDf8C7763F5De93E9F4EC08883e90caE
       - POLYGON_ZK_EVM_NETWORK_ID=1
