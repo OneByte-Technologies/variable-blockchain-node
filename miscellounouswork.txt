@@ -1,0 +1,131 @@
+
+puneetblockchain@Puneets-Mac-mini cdk-validium-contracts % node wallets.js 
+## Deployment Address
+Address: 0xf2761AC1faf8bDE5c255300fbC11628149Dc7856
+PrvKey: 0xa218054b216de8e862c05733c53b2f8d6aa396ebdf2d19e6fc1eccfaeafd81ea
+mnemonic: "nasty shoe risk vendor grid time annual hazard safe garment affair spray"
+keystore: {"address":"f2761ac1faf8bde5c255300fbc11628149dc7856","id":"97a63858-1d21-4289-a1d3-6602e4af2e2a","version":3,"crypto":{"cipher":"aes-128-ctr","cipherparams":{"iv":"cbd6ac46f3130041d2e86a376166f464"},"ciphertext":"8fd3699cf8be109cd301c070e0325ed38a6a372978e065bce74cb974de5323dc","kdf":"scrypt","kdfparams":{"salt":"9d6a7531a512cd884e654c44613fb403e28682be33b9f04a6b156a04bbb08437","n":131072,"dklen":32,"p":1,"r":8},"mac":"04619cff2ef612f8d499c9ed5c501124662dfbc55653162e3aa01ba038bddac9"},"x-ethers":{"client":"ethers.js","gethFilename":"UTC--2023-12-12T09-03-28.0Z--f2761ac1faf8bde5c255300fbc11628149dc7856","mnemonicCounter":"835a43a53e349c549a209c6dacbe4f40","mnemonicCiphertext":"6850b001de9caca7eeb70cd5c4db9afc","path":"m/44'/60'/0'/0/0","locale":"en","version":"0.1"}}
+\n\n## Trusted sequencer
+Address: 0x08FcfD90a213222f6418657AF08DA81f29F71614
+PrvKey: 0xbacc233163a5c81f7066c9946cf7755f315bcdc9f426a2e5bc358252cc8d56ce
+mnemonic: "fox zebra sunny slim faculty evil leader slide web galaxy inform cram"
+keystore: {"address":"08fcfd90a213222f6418657af08da81f29f71614","id":"bb528b7a-4858-4733-aab9-96f2fb45376e","version":3,"crypto":{"cipher":"aes-128-ctr","cipherparams":{"iv":"1e8367389cbd67d0714d7b8eb2b257f9"},"ciphertext":"5ac72b684f2aa05fdfa490f64ea50c0f52dab0cb1d9524b464f86b71d6c04034","kdf":"scrypt","kdfparams":{"salt":"a0fea70de1501e8df0fb07186e2329597f572444f868810ee5791e00290394ac","n":131072,"dklen":32,"p":1,"r":8},"mac":"e2b6bd79f98ffe60d8e493c7d568c5b4ec2de7f27669e4404b9b1ddff2415441"},"x-ethers":{"client":"ethers.js","gethFilename":"UTC--2023-12-12T09-03-29.0Z--08fcfd90a213222f6418657af08da81f29f71614","mnemonicCounter":"2dec397cac520e81e7014bbf7e25f281","mnemonicCiphertext":"750be59b7a27b5b2b3f96b4e9eab89ff","path":"m/44'/60'/0'/0/0","locale":"en","version":"0.1"}}
+\n\n## Trusted aggregator
+Address: 0x82b455606eBd1042619a3e682CC363B6f3631189
+PrvKey: 0x092a77648cf91e830f30d8a609c5c080c9ba27a0e6d1d3a5a8f3ab26dea284b2
+mnemonic: "gun dial clerk notice expose slow reason monkey stereo rally very culture"
+keystore: {"address":"82b455606ebd1042619a3e682cc363b6f3631189","id":"1afe97d9-4e98-43f2-8212-ddbd50904ebd","version":3,"crypto":{"cipher":"aes-128-ctr","cipherparams":{"iv":"4a4a67594c90a1e73c2158ed210f520f"},"ciphertext":"a33ad88af615f297bb08e4555d5ec1ce59a3a8e635b3b35542a33c712ec969b3","kdf":"scrypt","kdfparams":{"salt":"4eaebfda1da6999a2bca250cae8842a3eda6da23da0f64363051e80684ccaa27","n":131072,"dklen":32,"p":1,"r":8},"mac":"724561b9938bfe27cd6327e8bc96ba4297fcb18283f2b6fb0a4f36427c4a299c"},"x-ethers":{"client":"ethers.js","gethFilename":"UTC--2023-12-12T09-03-30.0Z--82b455606ebd1042619a3e682cc363b6f3631189","mnemonicCounter":"bfd96e1eedb249add5709477a1cdcb61","mnemonicCiphertext":"5b91512ff5d6dcfd43605e961b12b1fe","path":"m/44'/60'/0'/0/0","locale":"en","version":"0.1"}}
+puneetblockchain@Puneets-Mac-mini cdk-validium-contracts % 
+
+
+
+Sequencer key using - ——————0xd8Fe84fEfCA052A850EF9Eb8BFEcDeE3ecB2Df5c
+
+cdk-validium-sequence-sender
+
+cdk-validium-aggregator
+
+Sequencer.keystore
+Genesis file last m
+
+Test.keystore.claimtx
+
+[SequenceSender]
+WaitPeriodSendSequence = "15s"
+LastBatchVirtualizationTimeMaxWaitPeriod = "10s"
+MaxTxSizeForL1 = 131072
+L2Coinbase = "0xf39fd6e51aad88f6f4ce6ab8827279cfffb92266"
+PrivateKey = {Path = "/pk/sequencer.keystore", Password = "testonly"}
+
+Aggregator address using ———————— 0x85C10b6D7508cDAF69D9a6C9277406D659B2c551
+
+dac-setup-committee-mock-l1
+
+dac-setup-committee-sepolia
+
+
+Aggregator keystore file
+
+Test.dac.memeber.keystore
+
+[Aggregator]
+Host = "0.0.0.0"
+Port = 50081
+RetryTime = "5s"
+VerifyProofInterval = "10s"
+TxProfitabilityCheckerType = "acceptall"
+TxProfitabilityMinReward = "1.1"
+ProofStatePollingInterval = "5s"
+SenderAddress = "0x70997970c51812dc3a010c7d01b50e0d17dc79c8"
+CleanupLockedProofsInterval = "2m"
+GeneratingProofCleanupThreshold = "10m"
+
+
+
+
+
+docker-compose -f docker-compose.yml up -d dac-setup-committee-sepolia
+
+
+
+
+
+{
+ "cdkValidiumAddress": "0x0DCd1Bf9A1b36cE34237eEaFef220932846BCD82",
+ "polygonZkEVMBridgeAddress": "0x4C739372258826995C302CD655beE12689B97d3F",
+ "polygonZkEVMGlobalExitRootAddress": "0xB7f8BC63BbcaD18155201308C8f3540b07f84F5e",
+ "cdkDataCommitteeContract": "0x2279B7A0a67DB372996a5FaB50D91eAA73d2eBe6",
+ "maticTokenAddress": "0x5FbDB2315678afecb367f032d93F642f64180aa3",
+ "verifierAddress": "0xCf7Ed3AccA5a467e9e704C703E8D87F634fB0Fc9",
+ "cdkValidiumDeployerContract": "0x8a655d3956Bc5D2BCB78EBc9997e8D776D03E37e",
+ "deployerAddress": "0xf39Fd6e51aad88F6F4ce6aB8827279cffFb92266",
+ "timelockContractAddress": "0x0B306BF915C4d645ff596e518fAf3F9669b97016",
+ "deploymentBlockNumber": 80,
+ "genesisRoot": "0xd88680f1b151dd67518f9aca85161424c0cac61df2f5424a3ddc04ea25adecc7",
+ "trustedSequencer": "0xf39fd6e51aad88f6f4ce6ab8827279cfffb92266",
+ "trustedSequencerURL": "http://cdk-validium-json-rpc:8123",
+ "chainID": 1001,
+ "networkName": "cdk-validium",
+ "admin": "0xf39fd6e51aad88f6f4ce6ab8827279cfffb92266",
+ "trustedAggregator": "0x70997970C51812dc3A010C7d01b50e0d17dc79C8",
+ "proxyAdminAddress": "0xC0BeC0ae448bAD01171919437833647a16df68B7",
+ "forkID": 5,
+ "salt": "0x0000000000000000000000000000000000000000000000000000000000000000",
+ "version": "0.0.1"
+}
+
+//=——————————————————
+
+0x34C13B52bDf8C7763F5De93E9F4EC08883e90caE
+
+docker run -d -v .:/key hermeznetwork/zkevm-node /app/zkevm-node encryptKey --pk 0xa218054b216de8e862c05733c53b2f8d6aa396ebdf2d19e6fc1eccfaeafd81ea --pw testonly -o /key
+
+
+
+$(MAKE) run-node
+    $(MAKE) run-dac
+    $(MAKE) run-bridge
+    $(MAKE) run-l2-explorer
+
+
+        docker-compose -f docker-compose.yml up -d dac-setup-committee-sepolia
+		docker-compose -f docker-compose.yml up -d cdk-validium-state-db
+		docker-compose -f docker-compose.yml up -d cdk-validium-pool-db
+		docker-compose -f docker-compose.yml up -d cdk-validium-event-db
+		docker-compose -f docker-compose.yml up -d cdk-validium-prover
+		docker-compose -f docker-compose.yml up -d cdk-validium-approve
+		docker-compose -f docker-compose.yml up -d cdk-validium-sync
+		docker-compose -f docker-compose.yml up -d cdk-validium-eth-tx-manager
+		docker-compose -f docker-compose.yml up -d cdk-validium-sequencer
+		docker-compose -f docker-compose.yml up -d cdk-validium-sequence-sender
+		docker-compose -f docker-compose.yml up -d cdk-validium-l2gaspricer
+		docker-compose -f docker-compose.yml up -d cdk-validium-aggregator
+		docker-compose -f docker-compose.yml up -d cdk-validium-json-rpc
+		docker-compose -f docker-compose.yml up -d  cdk-validium-data-node-db
+		docker-compose -f docker-compose.yml up -d cdk-validium-data-availability
+		docker-compose -f docker-compose.yml up -d zkevm-bridge-db
+		docker-compose -f docker-compose.yml up -d zkevm-bridge-service
+		docker-compose -f docker-compose.yml up -d zkevm-bridge-ui
+		docker-compose -f docker-compose.yml up -d cdk-validium-explorer-l2-db
+		docker-compose -f docker-compose.yml up -d cdk-validium-explorer-json-rpc
+		docker-compose -f docker-compose.yml up -d cdk-validium-explorer-l2
