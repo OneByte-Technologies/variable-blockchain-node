@@ -19,7 +19,7 @@ RetryInterval = "1s"
 RetryNumber = 10
 
 [Etherman]
-L1URL = "https://sepolia.infura.io/v3/ebe86eee82f64cfba1cc12bcb2b0776a"
+L1URL = "https://powerful-aged-asphalt.ethereum-sepolia.quiknode.pro/339ad325293976941a7617584fda41b707e0f801/"
 L2URLs = ["http://35.190.182.136:8123"]
 
 [Synchronizer]

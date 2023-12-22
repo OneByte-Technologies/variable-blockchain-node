@@ -33,7 +33,7 @@ PollMinAllowedGasPriceInterval = "15s"
 	MaxConns = 200
 
 [Etherman]
-URL = "https://sepolia.infura.io/v3/2dda643294d74a10bc9bf2fdcf85e8f5"
+URL = "https://powerful-aged-asphalt.ethereum-sepolia.quiknode.pro/339ad325293976941a7617584fda41b707e0f801/"
 MultiGasProvider = false
 	[Etherscan]
 		ApiKey = ""

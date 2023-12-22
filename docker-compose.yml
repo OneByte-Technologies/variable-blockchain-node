@@ -406,7 +406,7 @@ services:
     volumes:
       - ./deploy_output.json:/shared/deploy_output.json
     environment:
-      - JSONRPC_HTTP_URL=https://sepolia.infura.io/v3/2dda643294d74a10bc9bf2fdcf85e8f5
+      - JSONRPC_HTTP_URL=https://powerful-aged-asphalt.ethereum-sepolia.quiknode.pro/339ad325293976941a7617584fda41b707e0f801/
       - DAC_URL=http://cdk-validium-data-availability:8444
       - DAC_ADDRESS=0x82b455606eBd1042619a3e682CC363B6f3631189
       - DEPLOYER_PRIVATE_KEY=0xa218054b216de8e862c05733c53b2f8d6aa396ebdf2d19e6fc1eccfaeafd81ea
@@ -469,7 +469,7 @@ services:
     depends_on:
       - zkevm-bridge-service
     environment:
-      - ETHEREUM_RPC_URL=https://sepolia.infura.io/v3/2dda643294d74a10bc9bf2fdcf85e8f5
+      - ETHEREUM_RPC_URL=https://powerful-aged-asphalt.ethereum-sepolia.quiknode.pro/339ad325293976941a7617584fda41b707e0f801/
       - ETHEREUM_EXPLORER_URL=https://sepolia.etherscan.io/
       - ETHEREUM_BRIDGE_CONTRACT_ADDRESS=0x50D5F4c27d80803aE66E11F213cc2D2A89d15Dc5
       - ETHEREUM_FORCE_UPDATE_GLOBAL_EXIT_ROOT=true

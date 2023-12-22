@@ -1,8 +1,8 @@
 PrivateKey = {Path = "/pk/test-member.keystore", Password = "testonly"}
 
 [L1]
-WsURL = "wss://quiet-solemn-field.ethereum-sepolia.quiknode.pro/6a59fdcbd391d36e6cb812854d2e02fbc959b99e/"
-RpcURL = "https://sepolia.infura.io/v3/2dda643294d74a10bc9bf2fdcf85e8f5"
+WsURL = "wss://powerful-aged-asphalt.ethereum-sepolia.quiknode.pro/339ad325293976941a7617584fda41b707e0f801/"
+RpcURL = "https://powerful-aged-asphalt.ethereum-sepolia.quiknode.pro/339ad325293976941a7617584fda41b707e0f801/"
 CDKValidiumAddress = "0x9f559d478df98FC057955bf534a3AbEF3736A37d"
 DataCommitteeAddress = "0xb33B5Aa1c73209C0ebf2ed59442664862d98d66A"
 Timeout = "3m"
