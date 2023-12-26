@@ -1,0 +1,23 @@
+{
+    "cdkValidiumAddress": "0x9f559d478df98FC057955bf534a3AbEF3736A37d",
+    "polygonZkEVMBridgeAddress": "0x50D5F4c27d80803aE66E11F213cc2D2A89d15Dc5",
+    "polygonZkEVMGlobalExitRootAddress": "0x3f62B6B463d9933cA84A1CA38f3667aBCE4B569F",
+    "cdkDataCommitteeContract": "0xb33B5Aa1c73209C0ebf2ed59442664862d98d66A",
+    "maticTokenAddress": "0xf398C72B65958fa117Cf48Bd167937Dd2Acb38e5",
+    "verifierAddress": "0x2B2779011388c3B1e3917Ed8be3E2fB223E7a6d1",
+    "cdkValidiumDeployerContract": "0xB589bc2B1BceA38212B9C9E8e2b168FD484307a9",
+    "deployerAddress": "0xf2761AC1faf8bDE5c255300fbC11628149Dc7856",
+    "timelockContractAddress": "0xbFF8392aCa05C62e4EB9217A8573367d74d383B7",
+    "deploymentBlockNumber": 4871678,
+    "genesisRoot": "0x1bc64b1f8456e7d872ed570f2be275b97fba89b607b835e6a39959eae25e9a7c",
+    "trustedSequencer": "0x08FcfD90a213222f6418657AF08DA81f29F71614",
+    "trustedSequencerURL": "http://cdk-validium-json-rpc:8123",
+    "chainID": 1001,
+    "networkName": "cdk-validium",
+    "admin": "0xf2761AC1faf8bDE5c255300fbC11628149Dc7856",
+    "trustedAggregator": "0x82b455606eBd1042619a3e682CC363B6f3631189",
+    "proxyAdminAddress": "0x0340b5A4DD132F110a8c0c4119ef7d399468a530",
+    "forkID": 1,
+    "salt": "0x0000000000000000000000000000000000000000000000000000000000000000",
+    "version": "0.0.1"
+   }

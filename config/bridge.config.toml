@@ -1,0 +1,53 @@
+[Log]
+Level = "debug"
+Outputs = ["stdout"]
+
+[SyncDB]
+Database = "postgres"
+User = "test_user"
+Password = "test_password"
+Name = "test_db"
+Host = "zkevm-bridge-db"
+Port = "5432"
+MaxConns = 200
+
+[ClaimTxManager]
+Enabled = true
+FrequencyToMonitorTxs = "1s"
+PrivateKey = {Path = "/pk/keystore.claimtxmanager", Password = "testonly"}
+RetryInterval = "1s"
+RetryNumber = 10
+
+[Etherman]
+L1URL = "https://powerful-aged-asphalt.ethereum-sepolia.quiknode.pro/339ad325293976941a7617584fda41b707e0f801/"
+L2URLs = ["http://35.190.182.136:8123"]
+
+[Synchronizer]
+SyncInterval = "1s"
+SyncChunkSize = 100
+
+[BridgeController]
+Store = "postgres"
+Height = 32
+
+[BridgeServer]
+GRPCPort = "9090"
+HTTPPort = "8080"
+CacheSize = 100000
+DefaultPageLimit = 25
+MaxPageLimit = 100
+BridgeVersion = "v1"
+    [BridgeServer.DB]
+    Database = "postgres"
+    User = "test_user"
+    Password = "test_password"
+    Name = "test_db"
+    Host = "zkevm-bridge-db"
+    Port = "5432"
+    MaxConns = 200
+
+[NetworkConfig]
+GenBlockNumber = 4871678
+PolygonBridgeAddress = "0x50D5F4c27d80803aE66E11F213cc2D2A89d15Dc5"
+PolygonZkEVMGlobalExitRootAddress = "0x3f62B6B463d9933cA84A1CA38f3667aBCE4B569F"
+L2PolygonBridgeAddresses = ["0x50D5F4c27d80803aE66E11F213cc2D2A89d15Dc5"]
